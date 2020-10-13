@@ -1,0 +1,55 @@
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+
+[tool.pylint.messages_control]
+disable = "all"
+enable = "C0202, E0102, E0211, E0213, E1120, E1121, E1123, R0401, W0613"
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.poetry]
+name = "ProjectName"
+version = "0.0.1"
+description = ""
+authors = ["Waking"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+commitizen = "^2.4.1"
+pre-commit = "^2.7.1"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+[[tool.poetry.source]]
+name = "douban"
+url = "http://pypi.douban.com/simple/"
+secondary = true
+
+[[tool.poetry.source]]
+name = "douban"
+url = "http://pypi.douban.com/simple/"
+secondary = true
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.0.1"
+tag_format = "$version"
+version_files = [
+  "pyproject.toml:version"
+]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
