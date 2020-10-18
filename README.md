@@ -22,7 +22,7 @@ The first step of a new python project!
 
    ```sh
    poetry run pre-commit install
-   poetry run pre-commit install --hook-type commit-msg
+   poetry run pre-commit install -t commit-msg
    ```
 
 ## Usage
