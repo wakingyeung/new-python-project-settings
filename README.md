@@ -8,32 +8,39 @@ The first step of a new python project!
 
 1. Install [poetry](https://python-poetry.org/docs/) in global environment
 
-    ```sh
-    sudo pip3 install poetry
-    ```
+   ```sh
+   sudo pip3 install poetry
+   ```
 
 2. Install [commitizen](https://commitizen-tools.github.io/commitizen/) and [pre-commit](https://pre-commit.com) in project path
 
-    ```sh
-    poetry install
-    ```
+   ```sh
+   poetry install
+   ```
 
 3. Install the git hook scripts
 
-    ```sh
-    poetry run pre-commit install
-    ```
+   ```sh
+   poetry run pre-commit install
+   poetry run pre-commit install --hook-type commit-msg
+   ```
 
 ## Usage
 
-1. Create new commit
+1. Activate the virtual environment
 
-    ```sh
-    cz c
-    ```
+   ```sh
+   source ./.venv/bin/activate
+   ```
 
-2. Bump semantic version and generate changelog based on the git log
+2. Create new commit
 
-    ```sh
-    cz bump --changelog --yes
-    ```
+   ```sh
+   cz c
+   ```
+
+3. Bump semantic version and generate changelog based on the git log
+
+   ```sh
+   cz bump --changelog --yes
+   ```
