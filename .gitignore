@@ -135,3 +135,11 @@ node_modules/
 .vscode
 
 .DS_Store
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
