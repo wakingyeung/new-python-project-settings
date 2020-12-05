@@ -131,12 +131,10 @@ dmypy.json
 # node
 node_modules/
 
-# vscode
-.vscode
-
 .DS_Store
 
 # Editor directories and files
+.vscode
 .idea
 *.suo
 *.ntvs*
